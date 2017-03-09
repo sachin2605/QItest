@@ -1,0 +1,40 @@
+<!-- <h3> {{ "App_Title" | translate }} </h3> -->
+<!-- <h3> {{ "App_welcome" | translate}} </h3> -->
+<!-- <button onclick="load()">Load</button> -->
+            <button class="btn btn-success"
+                ng-click="vm.load()">Load</button>
+
+                    <!-- Password-->
+    <div class="control-group">
+        <div class="controls">
+            <input
+                   ng-model="vm.instrumentSelected"  class="input-xlarge">
+        </div>
+        <div class="controls">
+            <button class="btn btn-danger"
+                ng-click="vm.loadById()">Search</button>
+        </div>
+    </div>
+
+<table class="table table-hover">
+    <tbody >
+	 		<td class="rowTd col-xs-1" > Id </td>
+                <td class="rowTd col-xs-4">
+                    Instrument_Id
+                </td>
+                <td class="rowTd col-xs-4">
+                Count
+                </td>
+            <tr ng-repeat="i in instruments">
+                <td class="rowTd col-xs-1">{{i.Id}}</td>
+                <td class="rowTd col-xs-4">
+                    {{i.Instrument_Id}}
+                </td>
+                <td class="rowTd col-xs-4">
+                {{i.Count}}
+                </td>
+            </tr>
+    </tbody>
+</table>
+<hr/>
+

@@ -1,0 +1,19 @@
+<section class="container">
+    <div class="row span12">
+        <form name="frmLogin" class="form-horizontal" >
+                <div id="legend">
+                    <legend class="">Upload</legend>
+                </div>
+                    <!-- email -->
+                    <label class="control-label" for="email">Enter The transaction </label>
+                    <div class="row span12">
+                        <input  ng-model="vm.timeStampTransaction"  required>
+                    </div>
+<!--                <a href="/#/register">Register</a>-->
+            <div class="controls">
+            <button class="btn btn-danger"
+                ng-click="vm.uploadTx()">Upload Transaction</button>
+        </div>
+        </form>
+    </div>
+</section>
